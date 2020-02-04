@@ -27,7 +27,7 @@ resource "consul_keys" "test" {
   key {
     name   = "address1"
     path   = "tf_test1/public_dns1"
-    value  = "5678"
+    value  = "8912"
     delete = true
   }
 }
