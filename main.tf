@@ -18,16 +18,9 @@ data "consul_keys" "input" {
 # the DNS name of the instance
 resource "consul_keys" "test" {
   key {
-    name   = "id1"
-    path   = "tf_test1/id1"
+    name   = "gatekeeper"
+    path   = "tenants/interfaces/aap.com/throttling/max"
     value  = "1234"
-    delete = true
-  }
-
-  key {
-    name   = "address1"
-    path   = "tf_test1/public_dns1"
-    value  = "8917"
     delete = true
   }
 }
