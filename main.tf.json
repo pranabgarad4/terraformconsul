@@ -1,23 +1,4 @@
 {
-  "data": [
-    {
-      "consul_keys": [
-        {
-          "input": [
-            {
-              "key": [
-                {
-                  "default": "m2.small",
-                  "name": "size1",
-                  "path": "tf_test1/size1"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ],
   "provider": [
     {
       "consul": [
@@ -32,16 +13,24 @@
     {
       "consul_keys": [
         {
-          "test": [
+          "app": [
             {
+              "datacenter": "dc1",
               "key": [
                 {
-                  "delete": true,
-                  "name": "gatekeeper",
-                  "path": "tenants/interfaces/aap.com/throttling/max",
+                  "path": "service/app/k1",
+                  "value": "1234"
+                },
+                {
+                  "path": "service/app/k2",
                   "value": "1235"
+                },
+                {
+                  "path": "service/app/k3",
+                  "value": "1236"
                 }
-              ]
+              ],
+              "token": "abcd"
             }
           ]
         }
