@@ -4,7 +4,7 @@
       "consul": [
         {
           "address": "pranabmac.gateway.local:8500",
-          "datacenter": "asia"
+          "datacenter": "dc1"
         }
       ]
     }
@@ -15,7 +15,7 @@
         {
           "app": [
             {
-              "datacenter": "asia",
+              "datacenter": "dc1",
               "key": [
                 {
                   "path": "service/app/k1",
